@@ -1,0 +1,61 @@
+@import "../../theme/variables.scss";
+
+.login {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	// min-height: calc(100vh - 74px);
+	height: 100vh;
+	flex-direction: column;
+
+	form {
+		& + p {
+			margin-top: 1rem;
+			color: #fff;
+			font-weight: 400;
+			font-size: 14px;
+			text-align: center;
+
+			a {
+				font-weight: 700;
+				color: #fff;
+			}
+		}
+
+		& > button {
+			width: 100%;
+			margin-top: 1rem;
+			padding: 0;
+			height: 40px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 6px;
+
+			&:hover {
+				background-color: darken($color: $btnBg, $amount: 5%);
+				color: $white;
+			}
+		}
+	}
+
+	& > div {
+		width: 100%;
+		max-width: 350px;
+	}
+}
+
+.logo {
+	font-weight: 500;
+	color: $purple;
+	font-size: 16px;
+	display: flex;
+	line-height: 1;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 1rem;
+
+	& > img {
+		margin-bottom: 10px;
+	}
+}

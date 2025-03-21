@@ -1,0 +1,58 @@
+@import "../../theme/variables.scss";
+
+.header {
+	background-color: $white;
+	height: 74px;
+	position: sticky;
+	z-index: 1;
+	top: 0;
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+
+	& > div {
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.wrap {
+		display: flex;
+		align-items: center;
+	}
+
+	.logo {
+		font-weight: 500;
+		color: $purple;
+		font-size: 16px;
+		display: flex;
+		line-height: 1;
+		align-items: center;
+
+		& > img {
+			margin-right: 5px;
+		}
+	}
+
+	button {
+		padding: 0.5rem 1rem;
+		border-radius: 6px;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.user {
+		margin-left: 1rem;
+		button {
+			padding: 0;
+			display: block;
+			cursor: pointer;
+			border: none;
+			background-color: transparent;
+		}
+		img {
+			// border: 1px solid #eee;
+			// border-radius: 6px;
+			display: block;
+		}
+	}
+}

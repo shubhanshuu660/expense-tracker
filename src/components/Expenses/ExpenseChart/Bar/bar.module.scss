@@ -1,0 +1,30 @@
+@import "../../../../theme/variables.scss";
+
+.wrap {
+	text-align: center;
+	p {
+		font-weight: 600;
+		font-size: 12px;
+		text-transform: uppercase;
+		color: #40005d;
+	}
+}
+
+.bar {
+	height: 100px;
+	width: 2rem;
+	margin: 0 auto;
+	border: 2px solid #40005d;
+	overflow: hidden;
+	position: relative;
+	border-radius: 50px;
+	margin: 5px 0;
+	span {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		transition: $transition;
+		background-color: #40005d;
+	}
+}

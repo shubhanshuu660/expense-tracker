@@ -1,0 +1,16 @@
+@import "../../theme/variables.scss";
+
+.card {
+	padding: 1rem;
+	border-radius: 6px;
+	box-shadow: $cardShadow;
+	background-color: $white;
+
+	& + .card {
+		margin-top: 2rem;
+	}
+
+	&.secondary {
+		background-color: $cardPrimaryColor;
+	}
+}

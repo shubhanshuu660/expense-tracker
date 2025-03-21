@@ -1,0 +1,17 @@
+.no-data {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	height: calc(100vh - (74px + 2rem));
+
+	img {
+		margin-bottom: 1rem;
+	}
+
+	p {
+		font-size: 18px;
+		font-weight: 600;
+		color: #40005d;
+	}
+}

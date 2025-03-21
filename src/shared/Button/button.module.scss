@@ -1,0 +1,24 @@
+@import "../../theme/variables.scss";
+
+.button {
+	font: inherit;
+	cursor: pointer;
+	padding: 1rem 2rem;
+	border: 1px solid $btnBg;
+	background-color: $btnBg;
+	color: $white;
+	font-size: 14px;
+	border-radius: 2px;
+	transition: $transition;
+
+	&:hover {
+		background-color: transparent;
+		color: $btnBg;
+		transition: $transition;
+	}
+
+	&:disabled {
+		opacity: 0.5;
+		pointer-events: none;
+	}
+}

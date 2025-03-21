@@ -1,0 +1,31 @@
+.error-page {
+	display: flex;
+	height: 100vh;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-color: #fff;
+
+	h1 {
+		color: #40005d;
+		line-height: 1;
+		margin: 0;
+		font-size: 125px;
+		font-weight: 900;
+	}
+
+	p {
+		color: #40005d;
+		font-size: 32px;
+		font-weight: 500;
+		margin-bottom: 25px;
+	}
+
+	button {
+		font-weight: 500;
+		padding: 0;
+		height: 45px;
+		width: 200px;
+		border-radius: 4px;
+	}
+}

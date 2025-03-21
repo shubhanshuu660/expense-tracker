@@ -1,0 +1,61 @@
+@import "../../theme/variables.scss";
+
+.form-control {
+	// width: calc(100% / 3);
+
+	& + .form-control {
+		margin-top: 1rem;
+	}
+
+	&.invalid {
+		input {
+			border-color: $error;
+			background: $errorBg;
+		}
+	}
+
+	label {
+		font-weight: 600;
+		margin-bottom: 0.5rem;
+		display: block;
+	}
+
+	input {
+		font: inherit;
+		padding: 0.5rem;
+		border-radius: 4px;
+		border: none;
+		height: 40px;
+		width: 100%;
+		border: 1px solid $white;
+		outline: none;
+	}
+
+	p {
+		font-size: 12px;
+		color: $errorTextColor;
+		margin: 0.3rem 0 0;
+	}
+}
+
+.input-with-icon {
+	position: relative;
+
+	button {
+		position: absolute;
+		cursor: pointer;
+		right: 10px;
+		top: 50%;
+		width: auto;
+		height: auto;
+		padding: 0;
+		margin: 0;
+		border: none;
+		background-color: transparent;
+		transform: translateY(-50%);
+	}
+	img {
+		height: 24px;
+		display: block;
+	}
+}
